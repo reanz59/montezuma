@@ -101,7 +101,7 @@
    (field-infos :initarg :field-infos)
    (orig-enum)
    (size :reader size)
-   (skip-interval :reader skip-interval)
+   (skip-interval :reader skip-interval :initform 0) ; added :initform so that empty segment can be used without unbound slot
    (index-enum)
    (index-terms :initform nil)
    (index-infos :initform nil)
